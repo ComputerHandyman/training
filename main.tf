@@ -29,7 +29,7 @@ resource "aws_instance" "web" {
   instance_type          = "t2.micro"
   vpc_security_group_ids = ["sg-57e40c2a"]
   subnet_id              = "subnet-d56fbc8e"
-  count			 = 2
+  count			 = 1
 
   tags {
     Identify = "datapipe-dragonfly"
